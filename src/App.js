@@ -18,7 +18,7 @@ function App() {
 
   //create new item in database
   const addToDatabase = () => {
-    axios.post("https://mern-competitor-registration.herokuapp.com/insert", {
+    axios.post("https://mern-runnerregistration.herokuapp.com/insert", {
       competitorName: competitorName,
       runningClub: runningClub,
       distance: distance,
@@ -27,7 +27,7 @@ function App() {
 
   //update distance of an item 
   const updateDistance = (id) => {
-    axios.put("https://mern-competitor-registration.herokuapp.com/update", {
+    axios.put("https://mern-runnerregistration.herokuapp.com/update", {
       id: id, 
       newDistance: newDistance,
     })
@@ -35,7 +35,7 @@ function App() {
 
   //delete competitor
   const deleteCompetitor = (id) => {
-    axios.delete(`https://mern-competitor-registration.herokuapp.com/delete/${id}`, {
+    axios.delete(`https://mern-runnerregistration.herokuapp.com/delete/${id}`, {
     });
   }
 
