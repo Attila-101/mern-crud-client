@@ -7,6 +7,7 @@
 }
 
 .competitor {
+  width: 20rem;
   border: 1px solid black;
   margin-top: 1rem;
   padding: 0.2rem;
