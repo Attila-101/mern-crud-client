@@ -11,7 +11,7 @@ function App() {
   const [competitorList, setCompetitorList] = useState([])
 
   useEffect(() => {
-    axios.get("https://mern-competitor-registration.herokuapp.com/read").then((response) => {
+    axios.get("https://mern-runnerregistration.herokuapp.com/read").then((response) => {
       setCompetitorList(response.data);
     })
   })
